@@ -1,0 +1,145 @@
+/* General Styling */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f8fb;
+    padding: 20px;
+}
+
+/* Form Container */
+main {
+    width: 100%;
+    max-width: 500px;
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form Fields */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+legend {
+    font-weight: bold;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+/* Label and Input Styling */
+label {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="radio"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-top: 5px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #4a90e2;
+    outline: none;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Checkbox and Radio Button Groups */
+input[type="checkbox"],
+input[type="radio"] {
+    cursor: pointer;
+}
+
+label > input[type="radio"] + span {
+    display: inline-block;
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Button */
+button {
+    padding: 12px;
+    width: 100%;
+    font-size: 1em;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ab8;
+}
+
+/* Error and Success Messages */
+.error {
+    color: #e74c3c;
+    font-size: 0.85em;
+    padding-top: 3px;
+}
+
+.success {
+    color: #27ae60;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 500px) {
+    main {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
